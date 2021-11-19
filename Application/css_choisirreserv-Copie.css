@@ -1,0 +1,81 @@
+div{
+    background-color:;
+    margin: 0 auto 0px auto;
+    border:;
+    /* box-sizing: border-box; */
+   }
+.d1:hover{
+    animation-play-state: paused;
+}
+.d2:hover{
+    animation-play-state: paused;
+}
+.d3:hover{
+    animation-play-state: paused;
+}
+.d1{
+	/* background-image: url(1.jpeg); */
+	/* width:350px;  */
+	/* height:200px; */
+    animation-name: taille1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+	/* width: 20%; */
+    /* height: 150px; */
+	margin-top: 25px;
+    left: 100px;
+    margin-right: 450px;
+	position: relative;
+	top: 55px;
+}
+.d2{
+    animation-name: taille2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+	
+	animation-iteration-count: infinite;
+	/* width: 20%; */
+    /* height: 150px; */
+	margin-top: 25px;
+	left:100px;
+	margin-right: 580px;
+	position: relative;
+	top:-170px;
+}
+.d3{
+    animation-name: taille3;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+	
+	animation-iteration-count: infinite;
+	/* width: 20%; */
+    /* height: 150px; */
+	margin-top: 25px;
+	left:170px;
+	margin-right: 580px;
+	position: relative;
+	top: -395px;
+}
+/*.d1
+	{
+	 transform: rotate(45deg);
+	}
+	*/
+
+@keyframes taille1{
+    from{width: 70%;}
+    50%{width: 50%;}
+    to{width: 70%;}
+}
+@keyframes taille2{
+    from{width: 30%;}
+    50%{width: 20%;}
+    to{width: 30%;}
+}
+@keyframes taille3{
+    from{width: 10%;}
+    50%{width: 5%;}
+    to{width: 10%;}
+}

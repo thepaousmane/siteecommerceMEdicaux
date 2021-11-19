@@ -1,0 +1,43 @@
+body 
+{
+background-color: #F1F1F2;
+}
+p
+{
+font-size: 20px;
+text-shadow: 2px 2px 4px #E2C499;
+font-family: 'cac_champagneregular', Arial, serif;
+font-family: 'cac_champagneregular', Arial, serif;
+}
+#conteneurlivrai
+{
+width: 840px;
+height :335px;
+border: 5px solid #777;
+border-radius: 15px;
+margin-top: 25px;
+margin-left: 180px;
+position: absolute;
+top: 55px;
+}
+h2
+{
+font-family: 'cac_champagneregular', Arial, serif;
+}
+#conteneurlivrai .ajustsubmit
+{
+width: 0px;
+height: 0px;
+position: relative;
+top: 70%;        
+left: 40%;		
+}
+.galerie_image
+	{
+	float: left; 
+	margin: 0px;
+	border: 1px solid #000000;
+	text-align: left;
+	height: 7.5em;
+	width: 6em;
+	}

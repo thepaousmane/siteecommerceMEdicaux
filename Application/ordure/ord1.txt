@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- <script src="jsjs"> -->
+      </script>
+      <link rel="stylesheet" type="text/css" href="css.css">
+      <meta charset="utf-8">
+      <title>(w3big.com)</title>
+           <!--    <script src="scrollReveal.js" type="text/javascript"></script>
+<script type="text/javascript">window.scrollReveal = new scrollReveal();</script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+
+    <div data-scroll-reveal="enter left and move 50px over 1.33s">Foo</div>
+ <script src='dist/scrollReveal.js'> </script> 
+</body>
+</head>
+<body>
+   <div data-scroll-reveal> Hello world! </div> 
+  <p>salu</p>
+  <h1 class="rep">
+    coco
+  </h1>
+   <div data-scroll-reveal="enter from the bottom after 1s">Bar</div>
+     <!-- <script src="https://unpkg.com/scrollreveal"></script> ça équivaut aussi à <script src='dist/scrollReveal.js'> </script> 
+      -->
+  <script>
+       // window.scrollReveal = new scrollReveal();
+       ScrollReveal().reveal('.rep', {delay :560, reset: true});
+   </script>
+  
+
+   <script>
+       window.scrollReveal=new scrollReveal();
+   </script> 
+    <script src='C\wamp\www\mario\draps\scrollreveal-master\dist'> </script> 
+
+ </body>
+</html>

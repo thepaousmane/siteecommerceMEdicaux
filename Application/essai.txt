@@ -1,0 +1,117 @@
+echo '		     	 
+				  <tr>
+						<td>
+						<img src="'.$_SESSION['idi'].'.jpeg" name="id" alt="example cafe" width="250" height="200"/>
+						</td>
+						<td>
+							7000f
+						</td>
+						<td>';
+
+
+
+
+
+
+
+				
+		<?php
+for($_SESSION['p']=1;$_SESSION['p']<=9;$_SESSION['p']++)
+	{
+		if(isset($_SESSION['id'.$_SESSION['p']]))
+		{    
+			?>												
+			<table id="tableau" border>
+			<thead>
+				<tr>
+					<th>Image</th>
+					<th>Prix</th>
+					<th>Suppréssion</th>
+				</tr>
+			</thead>
+			<tbody>
+			<?php break;}
+
+					}
+						//*99*4#?>
+					<div id="divv">
+						<?php
+						for($_SESSION['p']=1;$_SESSION['p']<=9;$_SESSION['p']++)
+						{
+							if(isset($_SESSION['id'.$_SESSION['p']]))
+							{ 
+							$_SESSION['idi']=$_SESSION['id'.$_SESSION['p']];
+						     	
+					if(empty($_GET['idi']))
+					{
+					  ?>   	 
+				  <tr>
+						<td>
+						<img src="<?php echo $_SESSION['idi']; ?>.jpeg" name="id" alt="example cafe" width="250" height="200"/>
+						</td>
+						<td>
+							7000f
+						</td>
+						<td>
+						<a href="panier.php?idi=<?php echo $_SESSION['idi']; ?>">
+					        <input type="button" onclick="deleteRow(this)==true"value="supp p22c"/>
+					    </a>
+						</td>
+					</tr>
+					<?php 
+						}
+						else
+						{
+							echo"djglrjkl";
+												echo $_GET['idi'];
+
+						}
+						}
+					}
+									//echo $_SESSION['id'.$_SESSION['i']];
+					?>
+						</div>
+					</tbody>
+				</table>
+				<form method="POST" action="panier.php">
+<input type="submit" name="Ok" value="Ok" >
+</form>
+			
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+  function verifonfirmation(){
+     var retVal = confirm("Voulez vous continuer ?");
+     if( retVal == true ){
+     //ici vous pouvez mettre votre en cas de confirmation
+     //moi j'affiche une boite d'alerte
+        alert("le produit a été ajouté dans le panier !");
+		  document.location.href="site - Copie.php"; 
+             return true;
+  }
+  if(retVal==false){
+     //ici vous pouvez mettre votre en cas de refus
+     //moi j'affiche une boite d'alerte
+        alert("veuillez donc continuer votre achat!");
+        document.location.href="choisirlivraison.php"; 
+             return false;
+     }
+  }
+  //-->
+  </script>
